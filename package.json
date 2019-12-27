@@ -1,0 +1,16 @@
+{
+  "name": "reactdmin-portal",
+  "version": "1.0.0",
+  "description": "Una aplicación para distribución de productos y compraventa de los mismos, hecho en React con Redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@Facundo:FacundoPalombo/reactdmin-portal.git"
+  },
+  "keywords": ["react", "redux", "portal", "ventas"],
+  "author": "Facundo Palombo",
+  "license": "MIT"
+}
