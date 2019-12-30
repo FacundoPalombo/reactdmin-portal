@@ -6,9 +6,5 @@ import './App.scss'
  * Application template
  */
 export const App = () => {
-  return (
-    <div>
-      Hello worldasdas
-    </div>
-  )
+  return <div>Hello worldasdas</div>
 }

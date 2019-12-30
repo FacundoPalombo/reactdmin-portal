@@ -48,7 +48,7 @@ const devConfig = {
             }
           }
         ]
-      },
+      }
     ]
   },
   optimization: {
@@ -123,7 +123,7 @@ const prodConfig = {
             }
           }
         ]
-      },
+      }
     ]
   },
   optimization: {
@@ -143,8 +143,8 @@ const prodConfig = {
       template: path.resolve(__dirname, 'src/index.html')
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-      chunkFilename: '[id].[hash].css'
+      filename: '[name].[hash:8].css',
+      chunkFilename: '[id].[hash:8].css'
     })
   ],
   mode: 'production'
