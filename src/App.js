@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './styles.css'
 import './App.scss'
+import Axios from 'axios'
 /**
  * @template App
  * Application template
  */
 export const App = () => {
-  return <div>Hello worldasdas</div>
+  const [data, setData] = useState({})
+  useEffect(async () => {
+    const result = await Axios.get('https://jsonplaceholder.typicode.com/users')
+    setData(result.data)
+  }, [])
+
+  return <div>asd</div>
 }
