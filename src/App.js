@@ -1,5 +1,6 @@
 import React from 'react'
-
+import './styles.css'
+import './App.scss'
 /**
  * @template App
  * Application template
@@ -7,7 +8,7 @@ import React from 'react'
 export const App = () => {
   return (
     <div>
-      Hello wasdasdasorld!
+      Hello worldasdas
     </div>
   )
 }
