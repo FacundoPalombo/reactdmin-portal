@@ -4,7 +4,8 @@
   "description": "Una aplicación para distribución de productos y compraventa de los mismos, hecho en React con Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "testw": "jest --watch",
     "dev": "webpack-dev-server",
     "build": "webpack --mode=production",
     "lint": "eslint . --fix"
@@ -38,14 +39,20 @@
     "@babel/plugin-transform-regenerator": "^7.7.5",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.2",
+    "@types/react": "^16.9.17",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.1.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
@@ -65,5 +72,13 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/__test__/setupTest.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(scss|sass|css)": "<rootDir>/src/utils/mocks/sassMocks.js"
+    }
   }
 }
