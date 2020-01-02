@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const HolaMundo = () => {
+export const HolaMundo = ({ isEnabled = false }) => {
   return (
     <div className='holaMundo'>
       Hello world!

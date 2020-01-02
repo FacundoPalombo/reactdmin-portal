@@ -8,7 +8,9 @@
     "testw": "jest --watch",
     "dev": "webpack-dev-server",
     "build": "webpack --mode=production",
-    "lint": "eslint . --fix"
+    "lint": "eslint src/*.js --fix",
+    "storybook": "start-storybook",
+    "storycheck": "start-storybook --smoke-test"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,7 @@
     "@babel/plugin-transform-regenerator": "^7.7.5",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@storybook/react": "^5.2.8",
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.2",
     "@types/react": "^16.9.17",
