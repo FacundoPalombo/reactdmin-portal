@@ -33,6 +33,7 @@
     "react-icons": "^3.8.0",
     "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.3"
   },
@@ -46,6 +47,7 @@
     "@types/jest": "^24.0.25",
     "@types/node": "^13.1.2",
     "@types/react": "^16.9.17",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.0",
     "enzyme": "^3.11.0",
@@ -76,13 +78,5 @@
       "eslint --fix",
       "git add"
     ]
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "<rootDir>/src/__test__/setupTest.js"
-    ],
-    "moduleNameMapper": {
-      "\\.(scss|sass|css)": "<rootDir>/src/utils/mocks/sassMocks.js"
-    }
   }
 }

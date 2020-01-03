@@ -1,4 +1,4 @@
-const debug = require('debug')('dev:jest')
+import { HolaMundo } from '../components/HolaMundo'
 
 test('Strings', () => {
   expect('hola').toMatch('hola')
