@@ -63,6 +63,9 @@ const devConfig = {
       }
     }
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   plugins: [
     new HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
@@ -137,6 +140,9 @@ const prodConfig = {
         }
       }
     }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
