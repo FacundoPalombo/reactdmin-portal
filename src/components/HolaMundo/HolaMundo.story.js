@@ -1,5 +1,5 @@
 import React from 'react'
-import { HolaMundo } from './HolaMundo'
+import { HolaMundo } from '.'
 
 export default { title: 'Hola Mundo' }
 
