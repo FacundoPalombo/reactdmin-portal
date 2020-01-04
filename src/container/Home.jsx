@@ -8,7 +8,14 @@ const HomeContainer = props => {
   console.log(props)
   return (
     <Layout>
-      Hello data! {data} <button onClick={setData}>Change data</button> <button onClick={getData}>Get data</button>
+      Hello data!
+      {data}
+      <button type='button' onClick={setData}>
+        Change data
+      </button>
+      <button type='button' onClick={getData}>
+        Get data
+      </button>
     </Layout>
   )
 }

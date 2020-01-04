@@ -11,7 +11,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 export const App = () => {
   return (
     <BrowserRouter>
-      <Route exact path='/' component={Home} />
+      <Route exact component={Home} path='/' />
     </BrowserRouter>
   )
 }
