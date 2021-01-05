@@ -25,7 +25,7 @@
   "author": "Facundo Palombo",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "core-js": "^3.6.1",
     "dotenv": "^8.2.0",
     "history": "^4.10.1",
